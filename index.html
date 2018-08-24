@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Timesaverz - Home Services Specialist</title>
+
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.theme.default.min.css">
+  <!-- JQuery UI -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css">
+  <!-- Datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar navbar-light bg-light shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="./images/logo.jpeg" class="img-fluid" alt="Timesaverz">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Service Details  -->
+  <section id="ServiceDetails" class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col heading">
+          <h3>home cleaning <span>3.5<span class="inner-span">/5 </span></span></h3>
+          <ul>
+            <li><i class="fas fa-users"></i> 3000+ </li>
+            <li><i class="fas fa-hourglass-start"></i> 2 Hours</li>
+            <li><i class="fas fa-briefcase"></i> 1,243+</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="service-info">
+            <div class="service-detail">
+            </div>
+            <div class="user-code">
+              <p> <img src="./images/percent.jpg" class="img-fluid"> User code TIMZ45 to avail an additional 15% Off! <span>T&C</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="service-form">
+            <form id="service-request-form">
+
+              <div class="row">
+
+                <div class="form-group col-sm-6">
+                  <label>Select Service</label>
+                  <select class="form-control" name="service">
+                    <option>Cleaning</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label>Select Type</label>
+                  <select class="form-control" name="type" id="serviceType" required>
+                    <option data-PayNowCost="1" selected disabled>Please select</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-12">
+                  <label>Frequency</label>
+                  <select class="form-control" name="frequency" id="serviceFrequency" required>
+                    <option data-multiplyingfactor="1" selected disabled>Please select</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label>Date</label>
+                  <input type="text" id="datepicker" autocomplete="off" class="form-control" name="date" placeholder="Date" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label>Time</label>
+                  <input type="text" id="timepicker" autocomplete="off" class="form-control" name="time" placeholder="Time" required>
+                </div>
+                <div class="form-group col-sm-12">
+                  <label>Additional Comments</label>
+                  <textarea class="form-control" rows="1" data-gramm="false" name="comments"></textarea>
+                </div>
+                <div class="form-group col">
+                  <p> Service Total</p>
+                </div>
+                <div class="form-group col text-right">
+                  <p id="total"> 0.00</p>
+                </div>
+              </div>
+              <div class="btn-book-service">
+                <button type="submit" class="btn btn-block">Book Service</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Service Comparision section -->
+  <section id="comparision">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="section-heading"><strong> compare </strong>services</h4>
+        </div>
+        <div class="form-group col-sm-4">
+          <select class="form-control">
+            <option>Basic Home Cleaning</option>
+            <option>Basic Home Cleaning</option>
+            <option>Basic Home Cleaning</option>
+            <option>Basic Home Cleaning</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-4">
+          <select class="form-control">
+            <option>Basic</option>
+            <option>Basic</option>
+            <option>Basic</option>
+            <option>Basic</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-4">
+          <button class="btn btn-compare btn-block ">compare services</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="section-heading"> what people say about our<strong> home cleaning services </strong></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="testimonial-card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente vel amet rem iste est animi atque,
+              officia facere beatae doloribus nemo ex obcaecati consequuntur.</p>
+
+            <p class="client-name">Namrata Shirodkar </p>
+            <p class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="far fa-star"></i></p>
+
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="testimonial-card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente vel amet rem iste est animi atque,
+              officia facere beatae doloribus nemo ex obcaecati consequuntur.</p>
+
+            <p class="client-name">Namrata Shirodkar </p>
+            <p class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="far fa-star"></i></p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Owl Carousel Section -->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="section-heading">people who used our<strong> home cleaning services </strong></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="owl-carousel owl-theme">
+            <div class="item" style="width:500px; height: 150px;">
+              <img src="./images/slide7.jpeg" class="img-fluid">
+            </div>
+            <div class="item" style="width:300px">
+              <img src="./images/slide3.jpeg" class="img-fluid">
+            </div>
+            <div class="item" style="width:300px">
+              <img src="./images/slide5.jpg" class="img-fluid">
+            </div>
+            <div class="item" style="width:400px; height: 150px;">
+              <img src="./images/slide4.jpeg" class="img-fluid">
+            </div>
+            <div class="item" style="width:300px">
+              <img src="./images/slide6.jpeg" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="section-heading"> about our<strong> cleaning services </strong></h4>
+        </div>
+      </div>
+      <div class="row row-wrapper">
+        <div class="col-md-4">
+          <img src="./images/about-us.jpg" alt="about us" class="img-fluid mx-auto">
+        </div>
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus iste voluptatem voluptatum ducimus
+            cum ipsum assumenda repudiandae unde! Nemo provident iste perferendis ab tempora quas doloremque voluptas repellat
+            voluptatibus earum expedita, cum odit qui suscipit libero, esse similique accusamus quasi totam! Nihil expedita
+            aut quasi. Architecto ducimus exercitationem dicta eaque commodi ea velit perferendis magni eos rerum assumenda
+            odio libero laboriosam dolorum id sed molestias doloremque illum cumque, dolor aliquam nisi debitis enim laborum.
+            Iure iusto minus ut modi!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading Recommendation Section -->
+  <section id="recommendation">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="section-heading"> you may also want to<strong> read </strong></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <figure>
+              <img src="./images/repair3.jpeg" alt="Cleaning" class="img-fluid">
+              <figcaption>Cleaning</figcaption>
+            </figure>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="date">11 December 2015 | John Doe</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <figure>
+              <img src="./images/repair1.jpeg" alt="Cleaning" class="img-fluid">
+              <figcaption>Cleaning</figcaption>
+            </figure>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="date">11 December 2015 | John Doe</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <figure>
+              <img src="./images/repair2.jpeg" alt="Cleaning" class="img-fluid">
+              <figcaption>Cleaning</figcaption>
+            </figure>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="date">11 December 2015 | John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <section id="footer-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./images/footer-logo.jpg" alt="footer-logo" class="img-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, saepe provident laborum veritatis repellendus,
+              exercitationem maiores quo in, distinctio a neque illo sint tempore rem id sed ipsa ducimus autem possimus
+              deleniti assumenda? Fuga nostrum placeat dolorem magnam natus quia.</p>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-heading">Timesaverz</h5>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>About us</li>
+                  <li>Careers</li>
+                  <li>FAQs</li>
+                  <li>Press</li>
+                  <li>Trust & Safety</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms of Use</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>Refer A Friend</li>
+                  <li>Support Center</li>
+                  <li>Contact Us</li>
+                  <li>Sitemap</li>
+                  <li>B2B</li>
+                  <li>Minutes New</li>
+                  <li>How to Earn Minutes</li>
+                  <li>Gift Cards</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-heading">Popular Services</h5>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>General Pest-Control</li>
+                  <li>Repaint Painting</li>
+                  <li>Fresh-Paint Painting</li>
+                  <li>Water-Proofing Handyman</li>
+                  <li>Sofa Cleaning</li>
+                  <li>Computer Repairs</li>
+                  <li>Plumbing Handyman</li>
+                  <li>Micorwave Repairs</li>
+                  <li>Electrician Handyman</li>
+                  <li>Carpentry Handyman</li>
+                  <li>More +</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5 class="footer-heading">Cities</h5>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>Bengaluru</li>
+                  <li>Delhi</li>
+                  <li>Gurgaon</li>
+                  <li>Hyderabad</li>
+                  <li>Mumbai</li>
+                  <li>Pune</li>
+                </ul>
+                <h5 class="footer-heading">Coming Soon</h5>
+                <ul>
+                  <li>Ahemdabad</li>
+                  <li>Chennai</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p> &copy; Timesaverz dotcom Pvt Ltd. All Rights Reserved </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQuery and Popper JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- JQuery UI -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- OwlCarousel -->
+  <script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
+  <!-- Datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./js/main.js"></script>
+  <script>
+    $(function () { $("#datepicker").datepicker({ minDate: 0, maxDate: "+1m", defaultDate: +1 }); $("#timepicker").timepicker(); });
+  </script>
+</body>
+
+</html>

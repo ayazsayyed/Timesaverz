@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+/* -----------------------------------*/
+
+/* ---------->>> GLOBAL <<<-----------*/
+
+/* -----------------------------------*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+a {
+  color: #333;
+  transition: .3s;
+  text-decoration: none;
+  display: inline-block
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none
+}
+
+section {
+  padding: 35px 0;
+}
+
+/* Variables */
+
+:root {
+  --primary-color: #273c4d;
+  --primary-yellow-color: #f7cf4c;
+  --light-bg-color: #f1f1f1;
+  --rating-star-color: #f9a825;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+/* Navbar */
+
+.navbar,
+.navbar-brand {
+  padding: 0;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.navbar-brand img {
+  width: 160px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+/* Service Details */
+
+#ServiceDetails {
+  background: url(./../images/pexels-photo-414645.jpeg) 50% no-repeat;
+  position: relative;
+  background-size: cover;
+  /* background-color: rgb(84, 162, 113); */
+}
+
+#ServiceDetails .service-info,
+#ServiceDetails .service-form {
+  background-color: #f7fbf8;
+  height: 460px;
+  padding: 20px 20px 0 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#ServiceDetails::before {
+  background: #52b376 repeat scroll 0 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+#ServiceDetails h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#ServiceDetails .heading span {
+  background: #fff;
+  color: #666;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+#ServiceDetails .heading .inner-span {
+  font-size: 12px;
+}
+
+#ServiceDetails .heading ul {
+  list-style: none;
+  color: #fff;
+  display: inline-flex;
+  float: right;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+
+#ServiceDetails .heading ul>li {
+  margin: 0 6px;
+  font-size: 14px;
+}
+
+.user-code {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #aaa;
+  padding: 0px;
+}
+
+.user-code p {
+  padding: 0;
+  margin: 4px;
+}
+
+.user-code span {
+  color: var(--primary-yellow-color);
+}
+
+.btn-book-service {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0;
+}
+
+.btn-book-service .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0 0 5px 5px;
+  padding: 8px;
+}
+
+/* Comparision */
+
+#comparision {
+  background-color: var(--light-bg-color);
+}
+
+#comparision .btn-compare {
+  background-color: var(--primary-yellow-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(221, 221, 221, 1);
+  box-shadow: 0px 4px 5px 0px rgba(221, 221, 221, 1);
+}
+
+/* Testimonial */
+
+#testimonial {
+  background-color: var(--light-bg-color);
+}
+
+#testimonial .testimonial-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#testimonial .client-name {
+  display: inline;
+  font-weight: 500;
+}
+
+#testimonial .ratings {
+  display: inline;
+  float: right;
+  color: var(--rating-star-color);
+}
+
+#about-us {
+  background-color: var(--light-bg-color);
+}
+
+#about-us .row-wrapper {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Secommendation Section */
+
+#recommendation {
+  background: #fff;
+}
+
+#recommendation .thumbnail img {
+  width: 100%;
+}
+
+#recommendation .thumbnail figure {
+  position: relative;
+}
+
+#recommendation .thumbnail figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  background: #52b376;
+  padding: 4px 10px;
+  color: #fff;
+}
+
+/* Cart */
+
+#cart {
+  background-color: #f1f1f1;
+}
+
+#cart .card{
+  margin-bottom: 25px;
+}
+
+#cart .billing-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.accordion .btn-link {
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+}
+
+#cart .card-header {
+  background-color: #fff;
+}
+
+#cart .card-header .btn .fa-angle-right {
+  float: right;
+  font-size: 20px;
+  color: #999999;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+#cart .card-header .btn .fa-check-circle {
+  float: right;
+  font-size: 25px;
+  color: var(--primary-yellow-color);
+  font-weight: 600;
+  margin-right: 30px;
+  display: none;
+}
+
+#cart .card-body {
+  background-color: #f8f8f8;
+}
+
+#cart .billing-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.address-form textarea {
+  border-color: var(--primary-yellow-color);
+}
+
+.address-card {
+  display: none;
+}
+
+.add-address-card {
+  display: inherit;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  background: none;
+  margin: 0 auto;
+  color: var(--primary-yellow-color);
+}
+
+.btn-coupon {
+  background-color: var(--primary-yellow-color);
+  text-transform: uppercase;
+}
+
+.btn-place-order {
+  width: 220px;
+  margin: 25px 0;
+}
+
+.form-check span {
+  color: var(--primary-yellow-color);
+}
+
+.total h3 {
+  text-align: right;
+  color: var(--primary-yellow-color);
+}
+
+.total .fas {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* Footer Large */
+
+#footer-lg {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#footer-lg ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#footer-lg p {
+  font-weight: 300;
+}
+
+#footer-lg .social-icons li {
+  display: inline;
+}
+
+#footer-lg .social-icons a {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  color: var(--primary-color);
+  background: #fff;
+  margin: 0 8px 0 0;
+}
+
+#footer-lg .footer-heading {
+  color: var(--primary-yellow-color);
+  font-weight: 400;
+}
+
+/* Footer Small */
+
+#footer-sm {
+  background-color: #233645;
+  color: #fff;
+}
+
+#footer-sm p {
+  margin: 0;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:500px) {
+  #ServiceDetails .service-info,
+  #ServiceDetails .service-form {
+    height: 615px;
+    margin-bottom: 30px;
+  }
+}
